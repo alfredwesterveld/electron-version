@@ -2,17 +2,20 @@
 
 # Discontinued 
 
-After research I have discovered this package is not needed thanks to xvfb-maybe package.
+After research I have discovered this package is not needed thanks to [xvfb-maybe](https://www.npmjs.com/package/xvfb-maybe) package.
 
-I would just put a run script inside my `package.json` as done right now in `package.json`
+firs have electron installed globally because electron-prebuilt is not a dependency of this/my project. 
+Next I would just put a run script inside `package.json` which looks like below (see `package.json` inside this repo):
 
-When I run npm start I will get the following output:
+`"start": "xvfb-maybe electron -v"`
+
+When I run npm start, also inside VM(vagrant):
 
 ```bash
+Alfreds-MacBook-Pro:electron-version alfredwesterveld$ npm start
+
 > electron-version@1.0.0 start /Users/alfredwesterveld/electron/electron-version
 > xvfb-maybe electron -v
 
 v1.2.2
 ```
-
-Also when I run this inside VM (vagrant)
