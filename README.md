@@ -9,7 +9,7 @@ Next I would just put a run script inside `package.json` which looks like below 
 
 `"start": "xvfb-maybe electron -v"`
 
-When I run npm start, also inside VM(vagrant):
+When I run `npm start`, also inside VM(vagrant):
 
 ```bash
 Alfreds-MacBook-Pro:electron-version alfredwesterveld$ npm start
