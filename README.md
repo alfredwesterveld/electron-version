@@ -1,14 +1,18 @@
 # Electron-version
 
-print (global) electron version to stdout and quit.
+# Discontinued 
 
-## Pre requirement
+After research I have discovered this package is not needed thanks to xvfb-maybe package.
 
-Have electron 
+I would just put a run script inside my `package.json` as done right now in `package.json`
 
-## Installation
+When I run npm start I will get the following output:
 
-npm install -g electron-version
-## Usage (development)
+```bash
+> electron-version@1.0.0 start /Users/alfredwesterveld/electron/electron-version
+> xvfb-maybe electron -v
 
-npm start
+v1.2.2
+```
+
+Also when I run this inside VM (vagrant)
