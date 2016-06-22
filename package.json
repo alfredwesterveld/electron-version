@@ -1,0 +1,26 @@
+{
+  "name": "electron-version",
+  "version": "1.0.0",
+  "description": "print electron version to stdout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "xvfb-maybe electron version.es6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfredwesterveld/electron-version.git"
+  },
+  "author": "Alfred Westerveld",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfredwesterveld/electron-version/issues"
+  },
+  "homepage": "https://github.com/alfredwesterveld/electron-version#readme",
+  "dependencies": {
+    "xvfb-maybe": "^0.1.3"
+  },
+  "devDependencies": {
+    "cross-env": "^1.0.8"
+  }
+}
